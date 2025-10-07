@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+}
+
+div .button{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#grey{
+    background-color: grey;
+}
+
+#pink{
+    background-color: pink;
+}
+
+#aquamarine{
+    background-color: aquamarine;
+}
+
+#yellow{
+    background-color: yellow;
+}
