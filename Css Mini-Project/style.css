@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.main_box{
+    height: 100vh;
+    background: url("/photo.jpg");
+    background-size: cover;
+}
+
+.btn_one i{
+    font-size: 30px;
+    color:white;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -320px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 0 0 7px rgba(255,255,255,.7);
+    transition: .3s linear;
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 5px rgba(255,255,255,.7);
+    text-align: center;
+}
+
+.sidebar_menu .logo a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two i{
+    font-size: 25px;
+    color:grey;
+    position: absolute;
+    left: 270px;
+    line-height: 60px;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    top:80px;
+    width: 100%;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 15px 20px;
+}
+
+.sidebar_menu .menu li a,i{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar_menu .menu li i{
+    padding-right: 10px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i{
+    color:white;
+    opacity: .5;
+    padding: 0 5px;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 5px rgba(255,255,255,.7);   
+    cursor: pointer;
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+}
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
+
+
+
+/* ------------------ Responsive ------------------ */
+@media (max-width: 1024px) {
+    .sidebar_menu {
+        width: 250px;
+    }
+    .sidebar_menu .menu li a, 
+    .sidebar_menu .menu li i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn_one i{
+        font-size: 26px;
+    }
+    .sidebar_menu {
+        width: 220px;
+    }
+    .sidebar_menu .logo a{
+        font-size: 18px;
+    }
+    .sidebar_menu .menu li{
+        padding: 12px 15px;
+    }
+    .sidebar_menu .social_media i{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn_one i{
+        font-size: 22px;
+        left: 10px;
+    }
+    .sidebar_menu {
+        width: 180px;
+    }
+    .sidebar_menu .logo a{
+        font-size: 16px;
+    }
+    .sidebar_menu .menu li a, 
+    .sidebar_menu .menu li i {
+        font-size: 14px;
+    }
+    .sidebar_menu .social_media {
+        bottom: 20px;
+    }
+}
